@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 - PART-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bree+Serif&family=Fredericka+the+Great&family=Protest+Guerrilla&display=swap"
+        rel="stylesheet">
+    <style>
+        #rgba {
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255, 123, 234, 0.4);
+            float: left;
+        }
+
+        #ef {
+            height: 200px;
+            width: 200px;
+            background-color: rgba(207, 123, 255, 0.4);
+            float: left;
+            font-family: "Protest Guerrilla", sans-serif;
+            /* text-align: center; */
+        }
+
+        #lgradient {
+            float: left;
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(146deg,
+                    rgba(15, 37, 110, 1) 12%,
+                    rgb(93, 254, 64) 55%,
+                    rgba(232, 56, 56, 1) 76%,
+                    rgba(0, 0, 0, 1) 100%
+                );
+            background-blend-mode: normal;
+        }
+
+        #rgradient {
+            float: left;
+            height: 200px;
+            width: 200px;
+            background: radial-gradient(
+                100% 100% at 17% 100%,
+                rgba(15, 37, 110, 1) 12%,
+                rgba(32, 178, 7, 1) 84%
+                );
+            background-blend-mode: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="rgba"></div>
+    <div id="ef">External font family :Welcome to PixlBuilders</div>
+    <div id="lgradient"></div>
+    <div id="rgradient"></div>
+</body>
+
+</html>

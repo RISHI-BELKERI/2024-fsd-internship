@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Positions</title>
+    <style>
+        #static{
+            display: inline-block;
+            border-style: dotted;
+
+        }
+        .s1, .s2, .s3, .s4 {
+            display: inline-block;
+            position: static;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            font-weight: 600;
+        }
+
+        .s2 {
+            background-color: green;
+        }
+
+        #relative{
+            display: inline-block;
+            border-style: dotted;
+        }
+
+        .r1, .r2, .r3, .r4{
+            display: inline-block;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            font-weight: 600;
+            z-index: 1; /* refered from yt */
+        }
+
+        .r2{
+            background-color: green;
+            top: 20px;
+            left: 20px;
+            z-index: 2; /* refered from yt */
+
+        }
+
+        #absolute{
+            display: inline-block;
+            border-style: dotted;
+        }
+
+        .a1, .a2, .a3, .a4{
+            /* position: absolute; */
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            font-weight: 600;
+            top: 23px;
+            left: 23px;
+        }
+
+        .a2{
+            position: absolute;
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>position: static</p>
+    <div id="static">
+        <div class="s1">One</div>
+        <div class="s2">Two</div>
+        <div class="s3">Three</div>
+        <div class="s4">Four</div>
+    </div>
+
+    <p>position: relative</p>
+    <div id="relative">
+        <div class="r1">One</div>
+        <div class="r2">Two</div>
+        <div class="r3">Three</div>
+        <div class="r4">Four</div>
+    </div>
+
+    <p>position: absolute</p>
+    <div id="absolute">
+        <div class="a1">One</div>
+        <div class="a2">Two</div>
+        <div class="a3">Three</div>
+        <div class="a4">Four</div>
+    </div>
+
+</body>
+
+</html>

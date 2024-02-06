@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG-example - Scalable Vector Graphics</title>
+    <style>
+        svg {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>default svg</p>
+    <svg></svg>
+
+    <p>Rect svg</p>
+    <svg width="300" height="300">
+        <rect width="100" height="100" x="100" y="100" style="fill: red"></rect>
+        <rect width="100" height="100" x="150" y="150" style="fill: blue"></rect>
+        <rect width="100" height="100" x="50" y="50" style="fill: blue; opacity:0.5"></rect>
+    </svg>
+
+    <p>circle svg</p>
+    <svg width="300" height="300">
+        <circle r="40" cx="50" cy="50" style="fill: red"></circle>
+        <circle r="40" cx="150" cy="150" style="fill: blue"></circle>
+        <circle r="40" cx="250" cy="250" style="fill: red"></circle>
+        <!-- <circle r="40" cx="150" cy="250" style="fill: red"></circle> -->
+        <!-- <circle r="40" cx="150" cy="50" style="fill: red"></circle> -->
+    </svg>
+
+    <p>line svg</p>
+    <svg width="300" height="300">
+        <line x1="0" y1="0" x2="300" y2="300" style="stroke-width: 2;" stroke="green"></line>
+        <line x1="300" y1="0" x2="150" y2="150" style="stroke-width: 2;" stroke="green"></line>
+        <line x1="0" y1="300" x2="150" y2="150" style="stroke-width: 2;" stroke="blue"></line>
+    </svg>
+
+    <p>polyline svg</p>
+    <svg width="300" height="300">
+        <polyline points="0,0 34,68 77,123 123,178 213,255 300,300" style="stroke-width: 2; fill:none" stroke="green"></polyline>
+        <polyline points="300,0 265,68 168,177 77,255 0,300" style="stroke-width: 2; fill:none" stroke="green"></polyline>
+    </svg>
+
+    <p>polygon svg</p>
+    <svg width="300" height="300">
+        <polygon points="0,0 150,150 300,0" style= "stroke-width: 2; fill:none" stroke="red"></polygon>
+        <polygon points="300,300 150,150 0,300" style= "stroke-width: 2; fill:none" stroke="red"></polygon>
+    </svg>
+
+    <p>square boxes</p>
+    <svg width="300" height="300">
+        <rect width="150" height="100" x="150" y="150" style="fill: blue"></rect>
+        <rect width="150" height="100" x="50" y="50" style="fill: red; opacity:0.5"></rect>
+        <rect width="100" height="100" x="100" y="100" style="fill: red;"></rect>
+    </svg>
+</body>
+
+</html>

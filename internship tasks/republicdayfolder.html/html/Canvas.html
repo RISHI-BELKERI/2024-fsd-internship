@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+    <style>
+        canvas {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>default canvas</p>
+    <canvas></canvas>
+    <p>rect canvas</p>
+    <canvas id="rect" width="200" height="200"></canvas>
+
+    <script>
+        a = document.getElementById("rect");
+        b = a.getContext("2d");
+        b.fillStyle = "red";
+        b.fillRect(50, 50, 100, 100);
+
+        b = a.getContext("2d");
+        b.fillStyle = "blue";
+        b.globalAlpha = 0.5;
+        b.fillRect(75, 75, 100, 100);
+    </script>
+
+    <canvas id="circle" width="200" height="200"></canvas>
+    <script>
+        a = document.getElementById("circle");
+        b = a.getContext("2d");
+        b.fillStyle = "red";
+        b.arc(100, 100, 30, 0, 2 * 3.142);
+        b.fill();
+
+        b = a.getContext("2d");
+        b.fillStyle = "red";
+        // b.globalAlpha = 0.5;
+        b.arc(50, 50, 30, 0, 2 * 3.142);
+        b.fill();
+
+        b = a.getContext("2d");
+        b.fillStyle = "red";
+        // b.globalAlpha = 0.5;
+        b.arc(150, 150, 30, 0, 2 * 3.142);
+        b.fill();
+    </script>
+
+    <canvas id="line" width="200" height="200"></canvas>
+    <script>
+        a = document.getElementById("line");
+        b = a.getContext("2d");
+        b.moveTo(0, 0);
+        b.lineTo(200, 200);
+        b.stroke();
+
+        b = a.getContext("2d");
+        b.moveTo(200, 0);
+        b.lineTo(0, 200);
+        b.stroke();
+
+    </script>
+</body>
+
+</html>

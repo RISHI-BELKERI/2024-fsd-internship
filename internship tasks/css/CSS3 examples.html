@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 examples-box shadow, animation</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+
+        #box {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            box-shadow: 10px 10px 10px red;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+        }
+
+        #box1 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            box-shadow: 10px 10px 10px red;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+        }
+
+        #box2 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            border-radius: 100%;
+            box-shadow: 10px 10px 10px red;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+        }
+
+        #box3 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            border-top-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            box-shadow: 10px 10px 10px red;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+        }
+
+        #box4 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            border-radius: 50px;
+            box-shadow: 10px 10px 10px red;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+        }
+
+        #box5 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            border-top-left-radius: 100%;
+            box-shadow: 10px 10px 10px red;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+        }
+
+        #box6 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            text-shadow: 10px 10px 10px white;
+            float: left;
+            animation-name: digisnare;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes digisnare {
+            from {
+                background-color: blue;
+            }
+
+            to {
+                background-color: yellow;
+                color: yellow;
+            }
+        }
+
+        .common{
+            /* height: 200px; */
+            /* width: 200px; */
+            /* border: 1px solid red; */
+            float: left;
+        }
+
+        /* img{
+
+        } */
+
+        #rotate{
+            border-radius: 100%;
+        }
+        #rotate:hover{
+            border-radius: 100%;
+            transition: 1s;
+            transform: rotate(360deg);
+            transform: rotate(infinite);
+        }
+
+        #scale{
+            border-radius: 100%;
+        }
+
+        #scale:hover{
+            transition: 3s;
+            transform: scale(2,2);
+        }
+
+        #skew:hover{
+            transition: 3s;
+            transform: skew(40deg,50deg);
+        }
+
+        #translate{
+            border-radius: 100%;
+        }
+
+        #translate:hover{
+            transition: 3s;
+            transform: translate(30px,40px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="box">Digisnare</div>
+    <div id="box1">Digisnare</div>
+    <div id="box2">Digisnare</div>
+    <div id="box3">Digisnare</div>
+    <div id="box4">Digisnare</div>
+    <div id="box5">Digisnare</div>
+    <div id="box6">Animation</div>
+
+    <div class="common"><!-- Rotate -->
+        <img src="css.jpg" width="200" id="rotate">
+    </div>
+
+    <div class="common"><!-- scale -->
+        <img src="css.jpg" width="200" id="scale">
+    </div>
+
+    <div class="common"><!-- skew -->
+        <img src="css.jpg" width="200" id="skew">
+    </div>
+
+    <div class="common"><!-- transform -->
+        <img src="css.jpg" width="200" id="transform">
+    </div>
+</body>
+
+</html>
